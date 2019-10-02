@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/wine_image"
+        android:layout_toRightOf="@+id/wine_image">
+
+        <TextView
+            android:id="@+id/wine_title"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:text="Recorino Volo Di Berardino 2017"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/wine_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="Amalfi Italian Restaurant"
+            android:layout_alignLeft="@+id/wine_title" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/wine_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <TextView
+            android:id="@+id/wine_price"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="$7.90"/>
+
+        <TextView
+            android:id="@+id/wine_date"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/wine_price"
+            android:textSize="12dp"
+            android:text="11 May"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

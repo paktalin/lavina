@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red_background">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order details"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/grab_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grab your order in Meat & Wine withing two days"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/map_cut"
+            android:layout_below="@id/grab_order"/>
+
+
+        <RelativeLayout
+            android:id="@+id/order_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:text="Langhe Nebbiolo Bric Cenciurio 2016"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:text="€13.50"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

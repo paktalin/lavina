@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red_background">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select wine"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sort_by"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SORT BY"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="20dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/sort_by"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            style="@style/Widget.MyTheme.HeaderBar.Spinner"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:background="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort_by">
+
+    </ListView>
+
+</RelativeLayout>
